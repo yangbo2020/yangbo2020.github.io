@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-10T03:52:03.997Z</updated>
+  <updated>2020-01-10T03:53:54.056Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/"/>
     <id>http://yoursite.com/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/</id>
     <published>2020-01-10T03:50:33.873Z</published>
-    <updated>2020-01-10T03:52:03.997Z</updated>
+    <updated>2020-01-10T03:53:54.056Z</updated>
     
     <content type="html"><![CDATA[<p>第八章 泛型</p><p>1.为什么使用泛型程序设计<br>     泛型程序设计 意味着编写的代码可以被很多不同类型的对象所重用（比如是重载的感觉）。比如说我们并不希望聚集String和File对象分别设计不同的类。实际上可以通过ArrayList<T> 来聚集任何类型的对象。<br>2.类型参数的好处<br>     ArrayList files=new ArrayList();<br>     String filename=(String) files,get(0);<br>  上面的例子存在两个问题：<br>     （1）当我想要获取一个值时必须进行强制类型转换<br>     （2）这里没有错误检查，因为可以向数组中添加任何类型的对象<br>  在编译不会出错，但是运行时就会报错。</p><p>  泛型则提供了一个好的解决方案：类型参数 （一种规范，强制要求ArrayList 里面所有的参数都是一种类型，便于一目了然）。<br>  ArrayList<String> files=new ArrayList();<br>  编译器会自己推理，知道返回的值类型是String，<br> 类型参数的魅力：使得程序具有更好的可读性和安全性</p>]]></content>
     
