@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>不知为何</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-01-10T03:52:03.997Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Bo Yang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泛型粗说</title>
+    <link href="http://yoursite.com/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/"/>
+    <id>http://yoursite.com/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/</id>
+    <published>2020-01-10T03:50:33.873Z</published>
+    <updated>2020-01-10T03:52:03.997Z</updated>
+    
+    <content type="html"><![CDATA[<p>第八章 泛型</p><p>1.为什么使用泛型程序设计<br>     泛型程序设计 意味着编写的代码可以被很多不同类型的对象所重用（比如是重载的感觉）。比如说我们并不希望聚集String和File对象分别设计不同的类。实际上可以通过ArrayList<T> 来聚集任何类型的对象。<br>2.类型参数的好处<br>     ArrayList files=new ArrayList();<br>     String filename=(String) files,get(0);<br>  上面的例子存在两个问题：<br>     （1）当我想要获取一个值时必须进行强制类型转换<br>     （2）这里没有错误检查，因为可以向数组中添加任何类型的对象<br>  在编译不会出错，但是运行时就会报错。</p><p>  泛型则提供了一个好的解决方案：类型参数 （一种规范，强制要求ArrayList 里面所有的参数都是一种类型，便于一目了然）。<br>  ArrayList<String> files=new ArrayList();<br>  编译器会自己推理，知道返回的值类型是String，<br> 类型参数的魅力：使得程序具有更好的可读性和安全性</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;第八章 泛型&lt;/p&gt;
+&lt;p&gt;1.为什么使用泛型程序设计&lt;br&gt;     泛型程序设计 意味着编写的代码可以被很多不同类型的对象所重用（比如是重载的感觉）。比如说我们并不希望聚集String和File对象分别设计不同的类。实际上可以通过ArrayList&lt;T&gt; 来聚集任何类型
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>不知为何</title>
+    <link href="http://yoursite.com/2020/01/09/%E4%B8%8D%E7%9F%A5%E4%B8%BA%E4%BD%95/"/>
+    <id>http://yoursite.com/2020/01/09/%E4%B8%8D%E7%9F%A5%E4%B8%BA%E4%BD%95/</id>
+    <published>2020-01-09T09:58:49.335Z</published>
+    <updated>2020-01-09T10:09:47.114Z</updated>
+    
+    <content type="html"><![CDATA[<p>该怎么做？做什么呢？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;该怎么做？做什么呢？&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/01/09/hello-world/"/>
+    <id>http://yoursite.com/2020/01/09/hello-world/</id>
+    <published>2020-01-09T08:05:00.339Z</published>
+    <updated>2020-01-09T08:05:00.340Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
