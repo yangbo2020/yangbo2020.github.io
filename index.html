@@ -229,6 +229,128 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bo Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="不知为何">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/10/%E6%B3%9B%E5%9E%8B%E7%B2%97%E8%AF%B4/" itemprop="url">泛型粗说</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-10T11:50:33+08:00">
+                2020-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>第八章 泛型</p>
+<p>1.为什么使用泛型程序设计<br>     泛型程序设计 意味着编写的代码可以被很多不同类型的对象所重用（比如是重载的感觉）。比如说我们并不希望聚集String和File对象分别设计不同的类。实际上可以通过ArrayList<T> 来聚集任何类型的对象。<br>2.类型参数的好处<br>     ArrayList files=new ArrayList();<br>     String filename=(String) files,get(0);<br>  上面的例子存在两个问题：<br>     （1）当我想要获取一个值时必须进行强制类型转换<br>     （2）这里没有错误检查，因为可以向数组中添加任何类型的对象<br>  在编译不会出错，但是运行时就会报错。</p>
+<p>  泛型则提供了一个好的解决方案：类型参数 （一种规范，强制要求ArrayList 里面所有的参数都是一种类型，便于一目了然）。<br>  ArrayList<String> files=new ArrayList();<br>  编译器会自己推理，知道返回的值类型是String，<br> 类型参数的魅力：使得程序具有更好的可读性和安全性</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/09/%E4%B8%8D%E7%9F%A5%E4%B8%BA%E4%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -514,7 +636,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
